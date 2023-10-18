@@ -1,0 +1,41 @@
+{
+  "name": "Ai-mrk",
+  "private": true,
+  "version": "1.0.5",
+  "type": "module",
+  "homepage": "http://AjayShukla007.github.io/Ai-mrk",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "@uiw/react-md-editor": "^3.23.6",
+    "@use-gesture/react": "^10.3.0",
+    "axios": "^1.5.1",
+    "email-validator": "^2.0.4",
+    "framer-motion": "^10.16.4",
+    "gh-pages": "^6.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-markdown": "^9.0.0",
+    "react-syntax-highlighter": "^15.5.0",
+    "subject-extractor": "^1.0.6",
+    "typewriter-effect": "^2.21.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "@vitejs/plugin-react": "^4.0.3",
+    "eslint": "^8.50.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5"
+  }
+}

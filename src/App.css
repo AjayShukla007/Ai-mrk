@@ -1,0 +1,68 @@
+.editor{
+  color: white;
+}
+.preview {
+  width: 100%;
+  height: 100vmin;
+  color: red;
+}
+.title {
+  color: #006bdf;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bolder;
+}
+.ai {
+  position: fixed;
+  top: 30px;
+  left: 340px;
+  width: 30px;
+  height: 30px;
+  color: white;
+  background: -webkit-linear-gradient(-45deg, #00ddf3, #ff22e3, #ff2222);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-radius: 100%;
+}
+.fullScreen {
+  position: fixed;
+  top: 30px;
+  left: 340px;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  z-index: 10;
+  touch-action: none;
+  pointer-events: none;
+}
+
+@media only screen and (max-width: 400px) {
+  body {
+    background-color: lightblue;
+  }
+  .ai {
+    text-align: center;
+    position: fixed;
+    top: 85%;
+    bottom: 15%;
+    left: 80%;
+    width: 40px;
+    height: 40px;
+    transition: 0.8s ease all;
+    background: white;
+    color: black;
+    -webkit-text-fill-color: black;
+    overflow: hidden;
+    font-size: 2rem;
+  }
+  .ais {
+    padding: 3px;
+    animation: textAni1 3s ease all;
+    background: -webkit-linear-gradient(-45deg, #00ddf3, #ff22e3, #ff2222);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .fullScreen{
+    display: none;
+  }
+}

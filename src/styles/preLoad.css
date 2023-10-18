@@ -1,0 +1,36 @@
+.preLoad{
+  background: white;
+  z-index: 100;
+  filter: blur(4px);
+}
+.preLoad h1{
+  color: #006bdf;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bolder;
+}
+.goUp{
+  background: black;
+  width: 100vw;
+  height: 30vh;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.goUp span{
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background: white;
+  margin: 0 10px;
+}
+.screenEditor{
+  height: 80%;
+  text-align: left;
+}
+.goDown{
+  border-top: 2px solid white;
+  background: black;
+  width: 100vw;
+  height: 65vh;
+}
