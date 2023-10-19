@@ -20,6 +20,7 @@ const Login = () => {
     useValue() as usingValue;
   const [saved, setSaved] = useState([]);
   const [status, setStatus] = useState<any>("");
+  const [click, setClick] = useState<boolean>(false);
   const [newOr, setNewOr] = useState<any>("New User?");
   const userNameRef = useRef<HTMLInputElement>(null);
   const passwordRef = useRef<HTMLInputElement>(null);
@@ -34,7 +35,11 @@ const Login = () => {
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
-
+    setClick(true);
+      setTimeout(()=>{
+       setClick(false) 
+      },2000);
+      
     try {
       const response = await axios.post(
         logInUserUrl,
@@ -87,6 +92,7 @@ const Login = () => {
       setStatus(
         <span style={{ color: "red" }}>Error login, Please try again</span>
       );
+      setClick(false);
       singUpBtnRef.current!.style.backgroundColor = "red";
       singUpBtnRef.current!.style.transform = "scale(1.2)";
     }
@@ -341,6 +347,7 @@ const Login = () => {
                 placeholder="password"
               />
               <motion.button
+              disabled={click}
                 ref={logBoxBtn1}
                 drag
                 dragConstraints={{
