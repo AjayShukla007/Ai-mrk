@@ -1,9 +1,9 @@
 import { useContext, useRef, useState, useEffect } from "react";
-import { ICommand, EditorContext } from "@uiw/react-md-editor";
-
-let MDEditor: any;
-let commands: any;
-
+import MDEditor, {
+  commands,
+  ICommand,
+  EditorContext,
+} from "@uiw/react-md-editor";
 import { useValue, usingValue } from "../Contaxt";
 import axios from "axios";
 
@@ -291,13 +291,14 @@ function App() {
   const [editorLoaded, setEditorLoaded] = useState(false);
 
   useEffect(() => {
-    import("@uiw/react-md-editor").then(module => {
-      MDEditor = module.default;
-      commands = module.commands;
-      setEditorLoaded(true);
-    });
+    // import("@uiw/react-md-editor").then(module => {
+    //   MDEditor = module.default;
+    //   commands = module.commands;
+    //   setEditorLoaded(true);
+    // });
 
     const windowLoad = () => {
+      setEditorLoaded(true);
       setTimeout(() => {
         fullScreenRef.current!.style.backgroundColor = "transparent";
       }, 1000);
@@ -357,7 +358,7 @@ function App() {
             value={value}
             preview="edit"
             extraCommands={[codePreview, customButton, commands?.fullscreen]}
-            onChange={(val: string) => {
+            onChange={(val: any) => {
               setValue(val!);
               // console.log(value);
             }}
