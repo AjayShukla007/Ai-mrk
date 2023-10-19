@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.5",
   "type": "module",
-  "homepage": "http://AjayShukla007.github.io/Ai-mrk",
+  "homepage": "https://ai-mrk.onrender.com",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
