@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.5",
   "type": "module",
-  "homepage": "https://ai-mrk.onrender.com",
+  "homepage": "https://shuklaajay0838@gmail.com.onrender.com",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
