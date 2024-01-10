@@ -59,7 +59,7 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Contact
 
-- Project Link: [live](https://aimrk.onrender.com)
+- Project Link: [live](https://ai-mrk.onrender.com)
 
 - Contact me: [linkedIn](https://www.linkedin.com/in/ajay-shukla-803308212)
 
